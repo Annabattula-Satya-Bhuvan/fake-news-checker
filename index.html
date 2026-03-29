@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fake News Detector</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+  <h1>🕵️ Fake News Detector</h1>
+  <p>Paste a news headline or article to analyze its authenticity</p>
+
+  <textarea id="newsInput" placeholder="Enter news text here..."></textarea>
+
+  <button onclick="analyzeNews()">Analyze News</button>
+
+  <div class="result" id="resultBox">
+    <h2 id="resultText"></h2>
+
+    <div class="meter">
+      <div class="fill" id="meterFill"></div>
+    </div>
+
+    <div class="confidence" id="confidenceText"></div>
+  </div>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
